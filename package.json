@@ -1,0 +1,53 @@
+{
+  "name": "ralbums",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "json-server": "^0.16.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-image-lightbox": "^5.1.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-toastify": "^5.5.0",
+    "react-window": "^1.8.5",
+    "redux": "^4.0.5",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^5.2.2",
+    "superagent-promise": "^1.1.0"
+  },
+  "scripts": {
+    "start": "run-p startdb start:dev",
+    "start:dev": "react-scripts start",
+    "startdb": "json-server --watch db.json --delay 0000 -p 4000",
+    "build": "react-scripts build",
+    "justTest": "react-scripts test",
+    "test": "run-p startdb justTest",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "redux-mock-store": "^1.5.4",
+    "superagent-mock": "^3.7.0"
+  }
+}

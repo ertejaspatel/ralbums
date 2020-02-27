@@ -1,0 +1,30 @@
+.albums{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+.albums .image {
+    height: 200px;
+    width: 260px;
+    padding: 20px;
+}
+
+.albums .album {
+    display: flex;
+    flex-direction: column;     
+    padding: 20px;  
+}
+
+.albums .album .title {    
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.albums .album .author{
+    margin-top: 0;
+}
+
+.albums .album .content {
+    padding: 0 20px;
+}
